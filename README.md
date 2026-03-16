@@ -1,7 +1,7 @@
 # SeqAssignLine
 
 Code Repository for experimenting with the [`LineFlow`](https://hs-kempten.github.io/lineflow/) framework to simulate a large-scale sequential
-assembly line. The actions space includes $10^43$ possible discrete actions, pushing the limits of current RL-models.
+assembly line. The actions space includes $10^{43}$ possible discrete actions, pushing the limits of current RL-models.
 
 ![LineFlow EF](./docs/figures/layout.png)
 
