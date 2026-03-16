@@ -1,0 +1,59 @@
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
+
+
+[project]
+name = 'lineflow-ef'
+authors = [
+    { name = 'Philipp Kofler', email = 'philipp.kofler@t-online.de' },
+    { name = 'Kilian Führer', email = 'kilian.fuehrer@t-online.de' },
+]
+maintainers = [
+    { name = 'Philipp Kofler', email = 'philipp.kofler@t-online.de' },
+]
+description = 'Python package for providing a simulation environment of a Sequential Assembly line.'
+readme = "README.md"
+dynamic = ['version']
+requires-python = "<3.14"
+dependencies = [
+    'lineflow-rl'
+]
+
+
+[project.optional-dependencies]
+dev = [
+    'pytest',
+    'pytest-cov',
+    'mkdocs',
+    'mkdocs-material',
+    'mkdocstrings-python',
+    'mike',
+    'ruff',
+    'debugpy',
+]
+
+
+[tool.setuptools.dynamic]
+version = { file = 'VERSION' }
+
+
+[tool.ruff]
+
+select = [
+  'E',   # pycodestyle
+  'F',   # pyflakes
+  'UP',  # pyupgrade
+  'D',   # pydocstyle
+  'PL',  # pylint
+]
+line-length = 120
+
+[tool.ruff.pydocstyle]
+convention = 'google'
+
+[tool.ruff.mccabe]
+max-complexity = 5
+
+[tool.setuptools]
+packages = ["lineflow_ef"]
