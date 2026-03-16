@@ -1,7 +1,7 @@
 # SeqAssignLine
 
 Code Repository for experimenting with the `LineFlow` framework to simulate a large-scal sequential
-assembly line.
+assembly line. The actions space includes 10^48 possible actions, pushing the limits of current RL-models.
 
 ![LineFlow EF](./docs/figures/layout.png)
 
