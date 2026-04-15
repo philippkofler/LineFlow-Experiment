@@ -17,7 +17,7 @@ readme = "README.md"
 dynamic = ['version']
 requires-python = "<3.14"
 dependencies = [
-    'lineflow-rl>=0.3.0'
+    'lineflow-rl>=0.4.0'
 ]
 
 

@@ -125,5 +125,5 @@ class Seq_Pro_Assembly(Line):
 
 
 if __name__ == '__main__':
-    line = Seq_Pro_Assembly(step_size=5)
-    line.run(3000, visualize=True, capture_screen=True)
+    line = Seq_Pro_Assembly(step_size=2, realtime=True, factor=0.01)
+    line.run(30_000, visualize=True)
